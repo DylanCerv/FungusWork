@@ -1,10 +1,8 @@
-import './App.css';
-
 function App() {
   return (
     <div className="h-screen">
       <header className="flex items-center justify-center h-full">
-        <pre>Fungus Landing</pre>
+        <pre className="bg-green-500">Fungus Landing</pre>
       </header>
     </div>
   );
