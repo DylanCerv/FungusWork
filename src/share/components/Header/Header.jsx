@@ -25,7 +25,7 @@ export default function Header() {
 
 
   return (
-    <header className='px-4 py-6 flex flex-row items-center justify-between'>
+    <header className='px-10 py-6 flex flex-row items-center justify-between'>
         <Logo/>
         {!active && 
             <Hamburger
