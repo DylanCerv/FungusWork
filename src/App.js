@@ -1,9 +1,8 @@
 import './styles/Proyectos.css'
+import './styles/CardProyectos.css'
 import { useState } from 'react';
-import { ArticleList, ButtonList } from './components'
 import {data , categories} from './data/data';
-// import { ArticleList } from './components'
-// import { ButtonList } from './components/ButtonList'
+import {  CardProyectos, ButtonList } from './components'
 
 function App() {
   // return (
@@ -14,49 +13,28 @@ function App() {
   //   </div>
   // );
 
-  // const AllCategories = categories;
-  // console.log(AllCategories);
-
-  // const [categories, setCategories] = useState(AllCategories)
-  // const [articles, setArticles] = useState(data)
-
-  // const filterCategory = (category) => {
-  //   console.log(category)
-  // }
-
-  // return (
-  //   <>
-  //     <div className="title">
-  //       <h1>Proyectos</h1>
-  //     </div>
-
-  //     <ButtonList categories={categories} filterCategory={filterCategory} />
-  //     <hr />
-  //     <ArticleList articles={articles} />
-  //   </>
-  // )
-
   const AllCategories = categories;
 
   const [selectedCategory, setSelectedCategory] = useState('Todas'); // Estado para la categoría seleccionada
-  const [articles, setArticles] = useState(data);
+  const [projects, setProjects] = useState(data);
 
   const filterCategory = (category) => {
     setSelectedCategory(category);
-    // Filtra los artículos basados en la categoría seleccionada
-    const filteredArticles = category === 'Todas' ? data : data.filter(article => article.category === category);
-    setArticles(filteredArticles);
+    // Filtra los proyectos basados en la categoría seleccionada
+    const filteredProjects = category === 'Todas' ? data : data.filter(project => project.category === category);
+    setProjects(filteredProjects);
   }
 
   return (
     <>
       <div className="title">
-        <h1 className="text-green-500">Proyectos</h1>
+        <h1 className="text-white font-bold">Proyectos</h1>
       </div>
 
       <ButtonList categories={AllCategories} filterCategory={filterCategory} selectedCategory={selectedCategory} />
-      <hr />
-      <ArticleList articles={articles} />
+      <div className= "container mx-auto">
+        <CardProyectos projects={projects} />
+      </div>
     </>
   )
 
