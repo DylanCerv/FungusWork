@@ -1,0 +1,287 @@
+@charset "UTF-8";
+
+/* ===================================
+    01. Google font
+====================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+/* ===================================
+    02. Reset
+====================================== */
+
+html { font-size: 14px; }
+*, *::after, *::before { box-sizing: border-box; }
+body { font-size: 15px; line-height: 30px; font-weight: 400; color: #828282; font-family: 'Roboto', sans-serif; padding: 0; margin: 0; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; word-break: break-word }
+body, html { -moz-osx-font-smoothing: grayscale; }
+a { text-decoration: none; }
+a:hover, a:focus { text-decoration: none; outline: none; outline-offset:0; color: #0038e3; }
+a, a:active, a:focus { color: #828282; }
+a { transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
+img { max-width: 100%; height: auto; }
+
+::selection { color: #000; background:#dbdbdb; }
+::-moz-selection { color:#a6a6a6; background:#dbdbdb; }
+::-webkit-input-placeholder { color: #a6a6a6; text-overflow: ellipsis; }
+::-moz-placeholder { color: #a6a6a6; text-overflow: ellipsis; opacity:1; }
+
+.container { padding-right: 15px; padding-left: 15px; }
+.row { margin-right: -15px; margin-left: -15px; }
+.row>* { padding-right: 15px; padding-left: 15px; }
+
+@media (prefers-reduced-motion:no-preference) {
+    :root { scroll-behavior: auto }
+}
+/* ===================================
+    03. Typography
+====================================== */
+
+/* font family */
+.alt-font { font-family: 'Poppins', sans-serif; }
+
+/* heading size */
+ h5 { margin:0 0 25px 0; padding:0; letter-spacing: -0.5px; font-weight: inherit; }
+h5 { font-size:2.30rem; line-height:3rem; }
+
+/* text size */
+.text-small { font-size:13px; line-height:22px; }
+/* .text-medium { font-size:14px; line-height:20px; } */
+.text-extra-medium { font-size:16px; line-height:28px; }
+
+/* text color, link color and link hover color */
+.text-white { color:#fff; }
+/* .text-extra-dark-gray { color:#232323; } */
+
+/* font weight */
+.font-weight-500 { font-weight: 500 !important; }
+
+/* lineheight */
+/* .line-height-18px { line-height: 18px; } */
+
+/* ===================================
+    04. Background color
+====================================== */
+
+/* background transparent gradient color */
+.bg-transparent-gradient-light-purple-light-orange { background-image: linear-gradient(to right top, rgba(183, 131, 255, .95), rgba(227, 123, 224, .95), rgba(250, 124, 193, .95), rgba(255, 133, 166, .95), rgba(255, 147, 147, .95)); }
+/* .bg-transpararent-gradient-dark-fungus-work{
+    background-image: linear-gradient(to right top, #08080c, #111a24, #052b36, #003d41, #004f40);
+} */
+.bg-transpararent-gradient-dark-fungus-work{
+    background: rgba(0, 0, 0, 0.9);
+}
+/* ===================================
+    05. Custom
+====================================== */
+
+section { padding: 130px 0; overflow: hidden; }
+
+/* ===================================
+    07. Border
+====================================== */
+
+/* border radius */
+.border-radius-5px { border-radius:5px; }
+
+/* ===================================
+    10. Margin
+====================================== */
+
+/* margin bottom */
+.margin-4-half-rem-bottom { margin-bottom: 4.5rem; }
+
+/* ===================================
+    11. Padding
+====================================== */
+
+/* padding top bottom */
+/* .padding-35px-tb { padding-top:35px; padding-bottom:35px; } */
+
+/* padding left right */
+.padding-2-half-rem-lr { padding-left: 2.5rem; padding-right: 2.5rem; }
+
+/* ===================================
+    12. Display and overflow
+====================================== */
+.overflow-hidden { overflow:hidden !important; }
+
+/* ===================================
+    13. Position
+====================================== */
+
+/* bottom */
+.bottom-40px { bottom:40px; }
+.bottom-200px { bottom:200px; }
+.bottom-320px { bottom:320px; }
+
+/* left */
+.left-0px { left: 0; }
+
+/* left minus */
+.left-0px { left: 0; }
+
+/* ===================================
+    14. Width
+====================================== */
+.w-100 { width: 100%; }
+
+/* ===================================
+    16. Icon
+====================================== */
+
+/* icon size */
+.icon-very-small { font-size:13px; }
+
+/* social media icon */
+.social-icon a { margin: 0 15px; }
+.social-icon a:first-child { margin-left: 0; }
+.social-icon a:last-child { margin-right: 0; }
+
+/* ===================================
+    25. Elements
+====================================== */
+
+/* team style 02 */
+.team-style-02 figure .team-member-image { position: relative; overflow: hidden; }
+.team-style-02 figure .team-member-details { position: absolute; height: 100%; width: 100%; left: 0; top: 100%; transition-duration: 0.3s; -moz-transition-duration: 0.3s; -webkit-transition-duration: 0.3s; -ms-transition-duration: 0.3s; transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -webkit-transition-timing-function: ease-in-out; -ms-transition-timing-function: ease-in-out; }
+.team-style-02 figure .team-member-image, .team-style-02 figure:hover .team-member-image { transition: all ease-in-out 0.3s; -moz-transition: all ease-in-out 0.3s; -webkit-transition: all ease-in-out 0.3s; -ms-transition: all ease-in-out 0.3s; }
+.team-style-02 figure { margin: 0; transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
+.team-style-02 figure:hover .team-member-details { top: 0; }
+.team-style-02 figure .social-icon a i {  -webkit-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1); -moz-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1); -ms-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1); -o-transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1); transition: all 0.2s cubic-bezier(0.2, 0, 0.3, 1); }
+.team-style-02 figure .social-icon a:hover i { -moz-transform: scale3d(1.3, 1.3, 1.3); -o-transform: scale3d(1.3, 1.3, 1.3); -ms-transform: scale3d(1.3, 1.3, 1.3); -webkit-transform: scale3d(1.3, 1.3, 1.3); transform: scale3d(1.3, 1.3, 1.3); }
+
+/* dentist */
+
+@keyframes myanim {
+    0% {right: 0;}
+    100% {right: 4000px;}
+}
+
+/* ===================================
+    28. Others
+====================================== */
+
+/* page loading */
+@keyframes spin { to { -webkit-transform: rotate(360deg); -ms-transform: rotate(360deg); transform: rotate(360deg); } }
+
+/* animation keyframe */
+@-webkit-keyframes down-arrow { 0% { opacity:0; top:0px; }18% { opacity:0.2; top:3px; }36% { opacity:.4; top:8px; }54% { opacity:.6; top:18px; }72% { opacity:.8; top:18px; }100% { opacity:1; top:18px; }}
+@keyframes down-arrow { 0% { opacity:0; top:0px; }18% { opacity:.0.2; top:3px; }36% { opacity:.4; top:8px; }54% { opacity:.6; top:18px; }72% { opacity:.8; top:18px; }100% { opacity:1; top:18px; }}
+
+@-webkit-keyframes social-icon-animation { 0% { top: 130px; left: -100px; }80% { top: 30px; left: -50px; }100% { top: -30px; left: -15px; }}
+@keyframes social-icon-animation { 0% { top: 130px; left: -100px; }80% { top: 30px; left: -50px; }100% { top: -30px; left: -15px; }}
+
+@-webkit-keyframes ani-mfp { 0% { -webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: hidden; opacity: 0; } 100% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; }}
+@keyframes ani-mfp { 0% { -webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: hidden; opacity: 0; } 100% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; }}
+
+@-webkit-keyframes ani-mfp-close { 0% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; } 100% { -webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: hidden; opacity: 0; }}
+@keyframes ani-mfp-close { 0% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; } 100% { -webkit-transform: translateY(-100%); transform: translateY(-100%); visibility: hidden; opacity: 0; }}
+
+@-webkit-keyframes comingsoonpopup { 0% { -webkit-transform: translateY(100%); transform: translateY(100%); visibility: hidden; opacity: 0; } 100% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; }}
+@keyframes comingsoonpopup { 0% { -webkit-transform: translateY(100%); transform: translateY(100%); visibility: hidden; opacity: 0; } 100% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; }}
+
+@-webkit-keyframes comingsoonpopupclose { 0% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; } 100% { -webkit-transform: translateY(100%); transform: translateY(100%); visibility: hidden; opacity: 0; }}
+@keyframes comingsoonpopupclose { 0% { -webkit-transform: translateY(0); transform: translateY(0); visibility: visible; opacity: 1; } 100% { -webkit-transform: translateY(100%); transform: translateY(100%); visibility: hidden; opacity: 0; }}
+
+@-webkit-keyframes drawing-animation { to { stroke-dashoffset: 0; }}
+@keyframes drawing-animation { to { stroke-dashoffset: 0; }}
+
+@-webkit-keyframes fadeIn { 0% { opacity: 0; }100% { opacity: 1; }}
+@keyframes fadeIn { 0% { opacity: 0; }100% { opacity: 1; }}
+
+@-webkit-keyframes fromTop { 0%{left: 0; top: -100%} 100%{left: 0; top: 0} }
+@keyframes fromTop { 0%{left: 0; top: -100%} 100%{left: 0; top: 0} }
+
+@-webkit-keyframes toTop { 0%{left: 0; top: 0} 100%{left: 0; top: -100%} }
+@keyframes toTop { 0%{left: 0; top: 0} 100%{left: 0; top: -100%} }
+
+@-webkit-keyframes fromRight { 0%{top: 0; left: 100%} 100%{top: 0; left: 0} }
+@keyframes fromRight { 0%{top: 0; left: 100%} 100%{top: 0; left: 0} }
+
+@-webkit-keyframes toRight { 0%{top: 0; left: 0} 100%{top: 0; left: 100%} }
+@keyframes toRight { 0%{top: 0; left: 0} 100%{top: 0; left: 100%} }
+
+@-webkit-keyframes fromBottom { 0%{left:0; top: 100%} 100%{left:0; top: 0} }
+@keyframes fromBottom { 0%{left:0; top: 100%} 100%{left:0; top: 0} }
+
+@-webkit-keyframes toBottom { 0%{left: 0; top: 0} 100%{left: 0; top: 100%} }
+@keyframes toBottom { 0%{left: 0; top: 0} 100%{left: 0; top: 100%} }
+
+@-webkit-keyframes fromLeft { 0%{top: 0; left: -100%} 100%{top: 0; left: 0} }
+@keyframes fromLeft { 0%{top: 0; left: -100%} 100%{top: 0; left: 0} }
+
+@-webkit-keyframes toLeft { 0%{top: 0; left: 0} 100%{top: 0; left: -100%} }
+@keyframes toLeft { 0%{top: 0; left: 0} 100%{top: 0; left: -100%} }
+
+@-webkit-keyframes video-icon-sonar { 0% { opacity: 1; -webkit-transform: scale(0.1); transform: scale(0.1); } 100% { opacity: 0; -webkit-transform: scale(1.10); transform: scale(1.10); } }
+@keyframes video-icon-sonar { 0% { opacity: 1; -webkit-transform: scale(0.1); transform: scale(0.1); } 100% { opacity: 0; -webkit-transform: scale(1.10); transform: scale(1.10); } }
+
+@media (min-width: 1199px) {
+    /* page container */
+    .container { max-width: 1170px; }
+}
+
+@media (max-width: 1199px) {
+    /* reset */
+    html { font-size: 13px; }
+    section { padding: 90px 0 }
+
+    /* typography */
+     h5 { margin:0 0 15px; }
+}
+
+@media (max-width: 991px) {
+    /* reset */
+    html { font-size: 12px }
+    section { padding: 75px 0; }
+
+    /* team style 02 */
+    .team-style-02 .social-icon a { margin: 0 8px; }
+
+}
+
+@media (max-width: 767px) {
+    /* reset */
+    html { font-size: 11px }
+    section { padding: 50px 0; }
+
+    /* margin bottom */
+    .sm-margin-15px-bottom { margin-bottom:15px; }
+    .sm-margin-3-rem-bottom { margin-bottom: 3rem; }
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.hover-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    left: 5%; /* Ajusta el valor izquierdo para centrar horizontalmente */
+    top: 10%; /* Ajusta el valor superior para centrar verticalmente */
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+
+  .team-style-02 figure:hover .hover-container {
+    top: 5%; /* Mueve el hover-container arriba para que sea visible en hover */
+  }
+
+  .titulo-card-proyecto{
+    text-shadow: -6px 2px 6px #004F40;
+    border-bottom: 2px solid rgba(0, 79, 64, 0.8);
+    padding: 0 10px;
+    /* text-underline-offset: inherit; */
+  }
