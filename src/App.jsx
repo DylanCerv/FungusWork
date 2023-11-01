@@ -16,18 +16,26 @@ const TEXTS = {
 
 function App() {
   return (
-    <div className="h-screen px-6">
-      <Header/>
-      <main className='md:px-20'>
-        <section className='text-center pt-32 md:text-start text-7xl'>
-          <h1 className='font-semibold italic'>{TEXTS.Section1.titleP}</h1>
-          <h1 className='text-secundary'>{TEXTS.Section1.titleS}</h1>
-          <br />
-          <br />
-          <p className='text-lg'>[falta los vectores de la imagen de fondo]</p>
-          <br />
+    <div className="h-screen">
+      <main>
+        <section className='relative'>
+          <Header/>
+          <img
+            className='absolute -z-10 top-0 left-0 w-full'
+            src="/img/bg-top.svg"
+            alt="bg"
+          />
+          <img
+            className='absolute -z-10 bottom-0 left-0 w-full'
+            src="/img/bg-bottom.svg"
+            alt="bg"
+          />
+          <article className='h-[50vh] py-20 px-4 text-center text-5xl md:text-start md:text-6xl md:px-20 md:h-[70vh] lg:text-7xl lg:h-[80vh] xl:h-screen'>
+            <h1 className='font-semibold italic'>{TEXTS.Section1.titleP}</h1>
+            <h1 className='text-secundary'>{TEXTS.Section1.titleS}</h1>
+          </article>
         </section>
-        <section className='flex flex-col gap-10 items-center justify-center text-center lg:p-20'>
+        <section className='py-20 px-10 flex flex-col gap-10 items-center justify-center text-center md:px-20 lg:p-40'>
           <img
             src="/logo/logo2.svg"
             alt="Logo"
