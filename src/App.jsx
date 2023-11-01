@@ -35,7 +35,7 @@ function App() {
   return (
     <div className="h-screen">
       <main>
-        <section className='relative'>
+        <section className='relative !py-0'>
           <Header/>
           <img
             className='absolute -z-10 top-0 left-0 w-full'
@@ -47,7 +47,7 @@ function App() {
             src="/img/bg-bottom.svg"
             alt="bg"
           />
-          <article className='h-[50vh] py-20 px-4 text-center text-5xl md:text-start md:text-6xl md:px-20 md:h-[70vh] lg:text-7xl lg:h-[80vh] xl:h-screen'>
+          <article className='h-[40vh] sm:h-[50vh] py-20 px-4 text-center text-6xl md:text-start md:text-7xl md:px-20 md:h-[90vh] lg:text-8xl lg:h-[100vh] xl:h-screen'>
             <h1 className='font-semibold italic'>{TEXTS.Section1.titleP}</h1>
             <h1 className='text-secundary'>{TEXTS.Section1.titleS}</h1>
           </article>
