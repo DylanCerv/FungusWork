@@ -1,15 +1,17 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
-    font-family: 'Segoe UI' !important;
-    box-sizing: border-box;
+body {
+    background: #08080c;
 }
 
-body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-    background: #08080c;
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    /* font-family: 'Inter', sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
