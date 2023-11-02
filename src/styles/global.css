@@ -4,14 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    background: #08080c;
+}
+
 *{
     padding: 0;
     margin: 0;
     color: #fff;
     /* font-family: 'Inter', sans-serif; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: #08080C;
 }
