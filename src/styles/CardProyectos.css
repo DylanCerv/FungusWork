@@ -75,7 +75,7 @@ h5 { font-size:2.30rem; line-height:3rem; }
     05. Custom
 ====================================== */
 
-section { padding: 130px 0; overflow: hidden; }
+.section-bc { padding: 130px 0; overflow: hidden; }
 
 /* ===================================
     07. Border
@@ -225,7 +225,7 @@ section { padding: 130px 0; overflow: hidden; }
 @media (max-width: 1199px) {
     /* reset */
     html { font-size: 13px; }
-    section { padding: 90px 0 }
+    .section-bc { padding: 90px 0 }
 
     /* typography */
      h5 { margin:0 0 15px; }
@@ -234,7 +234,7 @@ section { padding: 130px 0; overflow: hidden; }
 @media (max-width: 991px) {
     /* reset */
     html { font-size: 12px }
-    section { padding: 75px 0; }
+    .section-bc { padding: 75px 0; }
 
     /* team style 02 */
     .team-style-02 .social-icon a { margin: 0 8px; }
@@ -244,7 +244,7 @@ section { padding: 130px 0; overflow: hidden; }
 @media (max-width: 767px) {
     /* reset */
     html { font-size: 11px }
-    section { padding: 50px 0; }
+    .section-bc { padding: 50px 0; }
 
     /* margin bottom */
     .sm-margin-15px-bottom { margin-bottom:15px; }

@@ -36,7 +36,7 @@ export const Home = () => {
     <div className="h-screen">
       <main>
         <section className='relative !py-0'>
-          <Header/>
+          {/* <Header/> */}
           <img
             className='absolute -z-10 top-0 left-0 w-full'
             src="/img/bg-top.svg"
@@ -63,7 +63,7 @@ export const Home = () => {
             <p className='text-2xl'>{TEXTS.Section2.description2}</p>
           </div>
         </section>
-        <section>
+        <section className="section-bc">
           <div className="title">
             <h1 className="text-white font-bold">Proyectos</h1>
           </div>
