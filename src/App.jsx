@@ -76,6 +76,7 @@ function App() {
             <CardProyectos projects={projects} />
           </div>
         </section>
+        <Services/>
       </main>
     </div>
   );
