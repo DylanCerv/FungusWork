@@ -4,6 +4,9 @@ import './styles/CardProyectos.css'
 import { useState } from 'react';
 import {data , categories} from './data/data';
 import {  CardProyectos, ButtonList } from './components'
+import { ContactInfo } from './components/Contacts/ContactInfo';
+import { Footer } from './components/Footer/Footer';
+import { Services } from './components/Services/Services';
 
 const TEXTS = {
   Section1: {
