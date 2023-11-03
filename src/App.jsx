@@ -3,13 +3,13 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NuestroEquipo from './pages/Nuestro-Equipo';
 import Home from './pages/Home';
-import Header from './share/components/Header/Header';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
 
   return (
     <>
-      <Header />
+      <NavBar />
       <BrowserRouter>
       <Routes>
         <Route path="/" element={< Home />} /> {/* Nueva página */}

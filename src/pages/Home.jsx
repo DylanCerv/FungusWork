@@ -1,4 +1,4 @@
-import Header from '../share/components/Header/Header';
+import NavBar from '../components/NavBar/NavBar';
 import '../styles/Proyectos.css'
 import '../styles/CardProyectos.css'
 import { useState } from 'react';
@@ -12,6 +12,7 @@ const TEXTS = {
   },
   Section2: {
     title: 'FungusWork Agency',
+    description: 'The idea for Cedar came to our co-founder after a nightmarish personal journey through the healthcare system led to confusion, frustration and disappointment. One thing was clear: The system needed to change. Because when the patient experience is convenient and clear, it leads to significantly better outcomes for providers, payers and the people they serve. Cedar’s mission is to make healthcare more affordable and accessible through our consumer-friendly platform that’s powered by data science, smart product design and personalization.',
     description1: 'The idea for Cedar came to our co-founder after a nightmarish personal journey through the healthcare system led to confusion, frustration and disappointment.',
     description2: 'One thing was clear: The system needed to change. Because when the patient experience is convenient and clear, it leads to significantly better outcomes for providers, payers and the people they serve. Cedar’s mission is to make healthcare more affordable and accessible through our consumer-friendly platform that’s powered by data science, smart product design and personalization.',
   },

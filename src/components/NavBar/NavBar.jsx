@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 const TEXTSNav = {
     logo: 'FungusWork',
     options: [
-        {name: 'Inicio', url: '#'},
-        {name: 'Nosotros', url: '#'},
+        {name: 'Inicio', url: '/'},
+        {name: 'Nosotros', url: '/nuestro-equipo'},
         {name: 'Servicios', url: '#'},
         {name: 'Proyectos', url: '#'},
     ],
@@ -14,7 +14,7 @@ const TEXTSNav = {
 }
 
 
-export default function Header() {
+export default function NavBar() {
 
     const [active, setActive] = useState(false);
 
