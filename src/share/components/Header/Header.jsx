@@ -45,11 +45,11 @@ export default function Header() {
             <ul className='mr-auto lg:mr-0 mt-10 lg:my-auto flex flex-col lg:flex-row gap-6 text-2xl font-semibold'>
                 {TEXTSNav.options.map((data, index)=>(
                     <li key={index}>
-                        <a href={data.url} className='h-full'>{data.name}</a>
+                        <a href={data.url} className='h-full text-white'>{data.name}</a>
                     </li>
                 ))}
             </ul>
-            <div className='mr-auto lg:mr-0 bg-primary px-6 py-3 rounded-full text-xl font-semibold'>
+            <div className='mr-auto lg:mr-0 bg-primary px-6 py-3 rounded-full text-xl font-semibold text-white'>
                 <a href={TEXTSNav.contactURL}>{TEXTSNav.contact}</a>
             </div>
         </div>

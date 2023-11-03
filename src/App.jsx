@@ -51,7 +51,7 @@ function App() {
             alt="bg"
           />
           <article className='h-[40vh] sm:h-[50vh] py-20 px-4 text-center text-6xl md:text-start md:text-7xl md:px-20 md:h-[90vh] lg:text-8xl lg:h-[100vh] xl:h-screen'>
-            <h1 className='font-semibold italic'>{TEXTS.Section1.titleP}</h1>
+            <h1 className='font-semibold italic text-white'>{TEXTS.Section1.titleP}</h1>
             <h1 className='text-secundary'>{TEXTS.Section1.titleS}</h1>
           </article>
         </section>
@@ -60,10 +60,10 @@ function App() {
             src="/logo/logo2.svg"
             alt="Logo"
           />
-          <h1 className='text-4xl'>{TEXTS.Section2.title}</h1>
+          <h1 className='text-4xl text-white'>{TEXTS.Section2.title}</h1>
           <div>
-            <p className='text-2xl'>{TEXTS.Section2.description1}</p>
-            <p className='text-2xl'>{TEXTS.Section2.description2}</p>
+            <p className='text-2xl text-white'>{TEXTS.Section2.description1}</p>
+            <p className='text-2xl text-white'>{TEXTS.Section2.description2}</p>
           </div>
         </section>
         <section>
@@ -77,6 +77,8 @@ function App() {
           </div>
         </section>
         <Services/>
+        <ContactInfo/>
+        <Footer/>
       </main>
     </div>
   );
