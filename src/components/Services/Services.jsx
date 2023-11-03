@@ -2,8 +2,8 @@ import { Service } from "./Service"
 
 export const Services = () => {
     return (
-        <div className="md:grid md:grid-cols-1 md:justify-center md:place-center md:h-screen py-5 md:mb-20">
-            <div className="flex flex-col items-center justify-center xl:h-full gap-8">
+        <div id="servicios" className="md:grid md:grid-cols-1 md:justify-center md:place-cente py-5">
+            <div className="flex flex-col items-center gap-8">
                 <span className="text-white text-3xl font-bold">Servicios</span>
                 <div className="flex flex-wrap items-center justify-center gap-16 md:w-services-container">
                     <Service 

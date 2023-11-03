@@ -62,7 +62,7 @@ export const Home = () => {
         </section>
         <Services/>
         <section
-          id='#proyectos'
+          id='proyectos'
           className="section-bc"
         >
           <div className="title">
