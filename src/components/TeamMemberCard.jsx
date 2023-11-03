@@ -39,7 +39,7 @@ const TeamMemberCard = ({ name, role, imageSrc, socialLinks }) => {
           </div>
         </div>
         <figcaption className="team-member-position padding-35px-tb text-center mt-6">
-          <div className="text-extra-dark-gray alt-font line-height-18px text-medium text-uppercase font-weight-500">{name}</div>
+          <div className="text-extra-dark-gray alt-font line-height-18px text-medium text-uppercase font-weight-500 text-green-500">{name}</div>
           <span className="text-small text-uppercase">{role}</span>
         </figcaption>
       </figure>

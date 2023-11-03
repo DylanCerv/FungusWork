@@ -34,7 +34,6 @@ body {
 	margin-right: 20px;
 	cursor: pointer;
 	border-radius: 15px;
-	background-color: #3f2b22;
 	color: #FFFFFF;
 	font-weight: 700;
 	font-size: 16px;
@@ -49,6 +48,10 @@ body {
 
 .btn-category:last-child {
 	margin-right: 0;
+}
+
+.btn-category:focus-visible{
+	outline: none;
 }
 
 /* Cuerpo articulos cards */

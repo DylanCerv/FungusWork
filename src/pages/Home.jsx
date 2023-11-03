@@ -1,4 +1,3 @@
-import NavBar from '../components/NavBar/NavBar';
 import '../styles/Proyectos.css'
 import '../styles/CardProyectos.css'
 import { useState } from 'react';

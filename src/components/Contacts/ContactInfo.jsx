@@ -40,11 +40,11 @@ export const ContactInfo = () => {
 }
 
 
-{/* <div className='flex justify-between gap-5'>
-    <InputText label='What’s your name?' placeholder='Full name'/>
-    <InputText label='What’s your email address?' placeholder='Email address'/>
-</div>
-<div className='flex justify-between gap-5'>
-    <InputText label='What’s your phone number?' placeholder='Phone number'/>
-    <InputText label='Email subject' placeholder='Subject'/>
-</div> */}
+// {/* <div className='flex justify-between gap-5'>
+//     <InputText label='What’s your name?' placeholder='Full name'/>
+//     <InputText label='What’s your email address?' placeholder='Email address'/>
+// </div>
+// <div className='flex justify-between gap-5'>
+//     <InputText label='What’s your phone number?' placeholder='Phone number'/>
+//     <InputText label='Email subject' placeholder='Subject'/>
+// </div> */}

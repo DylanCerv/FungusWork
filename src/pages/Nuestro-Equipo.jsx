@@ -68,11 +68,11 @@ export const NuestroEquipo = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-40">
+    <div className="container mx-auto mt-32">
       <div className="flex flex-wrap justify-center">
-        <div className="w-full md:w-1/2 text-center mb-8">
-          <span className="alt-font text-extra-medium">The Development Team</span>
-          <h5 className="alt-font text-extra-dark-gray font-weight-500 text-green-500">Creative people</h5>
+        <div className="w-full md:w-1/2 text-center mb-4">
+          <span className="alt-font text-2xl text-white mb-1">The Development Team</span>
+          <h5 className="alt-font text-extra-dark-gray text-lg font-weight-500 text-green-500">Creative people</h5>
         </div>
       </div>
       <div className="flex flex-wrap">
