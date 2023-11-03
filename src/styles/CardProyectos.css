@@ -61,7 +61,7 @@ h5 { font-size:2.30rem; line-height:3rem; }
 
 /* ===================================
     04. Background color
-====================================== */
+====================================== */ 
 
 /* background transparent gradient color */
 .bg-transparent-gradient-light-purple-light-orange { background-image: linear-gradient(to right top, rgba(183, 131, 255, .95), rgba(227, 123, 224, .95), rgba(250, 124, 193, .95), rgba(255, 133, 166, .95), rgba(255, 147, 147, .95)); }
