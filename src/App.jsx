@@ -1,25 +1,15 @@
+// import Header from './share/components/Header/Header';
+// import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import NuestroEquipo from './pages/Nuestro-Equipo';
+import Home from './pages/Home';
 import Header from './share/components/Header/Header';
-import './styles/Proyectos.css'
-import './styles/CardProyectos.css'
+import { Services } from './components/Services/Services'
+import { ContactInfo } from './components/Contacts/ContactInfo'
+import { Footer } from './components/Footer'
 import { useState } from 'react';
-import {data , categories} from './data/data';
-import {  CardProyectos, ButtonList } from './components'
-import { ContactInfo } from './components/Contacts/ContactInfo';
-import { Footer } from './components/Footer/Footer';
-import { Services } from './components/Services/Services';
-
-const TEXTS = {
-  Section1: {
-    titleP: 'FUNGUS WORK',
-    titleS: 'AGENCY',
-  },
-  Section2: {
-    title: 'FungusWork Agency',
-    description1: 'The idea for Cedar came to our co-founder after a nightmarish personal journey through the healthcare system led to confusion, frustration and disappointment.',
-    description2: 'One thing was clear: The system needed to change. Because when the patient experience is convenient and clear, it leads to significantly better outcomes for providers, payers and the people they serve. Cedar’s mission is to make healthcare more affordable and accessible through our consumer-friendly platform that’s powered by data science, smart product design and personalization.',
-  },
-}
-
+import { categories, data } from './data/data';
+import { ButtonList, CardProyectos } from './components';
 
 function App() {
 
@@ -35,11 +25,29 @@ function App() {
     setProjects(filteredProjects);
   }
 
+  const TEXTS = {
+    Section1: {
+      titleP: 'FUNGUS WORK',
+      titleS: 'AGENCY',
+    },
+    Section2: {
+      title: 'FungusWork Agency',
+      description1: 'The idea for Cedar came to our co-founder after a nightmarish personal journey through the healthcare system led to confusion, frustration and disappointment.',
+      description2: 'One thing was clear: The system needed to change. Because when the patient experience is convenient and clear, it leads to significantly better outcomes for providers, payers and the people they serve. Cedar’s mission is to make healthcare more affordable and accessible through our consumer-friendly platform that’s powered by data science, smart product design and personalization.',
+    },
+  }
+
   return (
     <div className="h-screen">
       <main>
         <section className='relative !py-0'>
-          <Header/>
+        <Header />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={< Home />} /> {/* Nueva página */}
+            <Route path="/nuestro-equipo" element={< NuestroEquipo />} /> {/* Nueva página */}
+          </Routes>
+        </BrowserRouter>
           <img
             className='absolute -z-10 top-0 left-0 w-full'
             src="/img/bg-top.svg"
