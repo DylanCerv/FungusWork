@@ -6,7 +6,7 @@ import { contacts } from './constants/data'
 
 export const ContactInfo = () => {
     return (
-        <div className={style.contact_container}>
+        <div id='contacto' className={style.contact_container}>
             <div className='bg-green-100 flex flex-col justify-center gap-4 md:w-contact-width h-contact-height rounded-2xl px-14'>
                 <span className='text-3xl font-bold text-black'>Contact Info</span> 
                 <span className='font-semibold text-black'>
