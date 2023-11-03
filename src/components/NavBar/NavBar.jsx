@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 
 const TEXTSNav = {
@@ -6,11 +7,11 @@ const TEXTSNav = {
     options: [
         {name: 'Inicio', url: '/'},
         {name: 'Nosotros', url: '/nuestro-equipo'},
-        {name: 'Servicios', url: '#'},
-        {name: 'Proyectos', url: '#'},
+        {name: 'Servicios', url: '/#servicios'},
+        {name: 'Proyectos', url: '/#proyectos'},
     ],
     contact: 'Contactanos',
-    contactURL: '#'
+    contactURL: '/#contacto'
 }
 
 
@@ -46,12 +47,12 @@ export default function NavBar() {
                 <ul className='mr-auto lg:mr-0 mt-10 lg:my-auto flex flex-col lg:flex-row gap-6 text-2xl font-semibold'>
                     {TEXTSNav.options.map((data, index)=>(
                         <li key={index}>
-                            <a href={data.url} className='h-full text-white'>{data.name}</a>
+                            <Link to={data.url} className='h-full text-white hover:text-green-100'>{data.name}</Link>
                         </li>
                     ))}
                 </ul>
-                <div className='mr-auto lg:mr-0 bg-primary px-6 py-3 rounded-full text-xl font-semibold text-white'>
-                    <a href={TEXTSNav.contactURL}>{TEXTSNav.contact}</a>
+                <div className='mr-auto lg:mr-0 bg-primary px-6 py-3 rounded-full text-xl font-semibold'>
+                    <Link to={TEXTSNav.contactURL} className='!text-white'>{TEXTSNav.contact}</Link>
                 </div>
             </div>
         </nav>
@@ -62,7 +63,7 @@ export default function NavBar() {
 
 function Logo () {
     return (
-        <a href={TEXTSNav.logo.url}>
+        <Link to={TEXTSNav.logo.url}>
             <div className='flex flex-row gap-4 items-end text-white'>
                 <img
                     className='w-14'
@@ -71,7 +72,7 @@ function Logo () {
                 />
                 <p className='text-2xl font-bold tracking-wider'>{TEXTSNav.logo.name}</p>
             </div>
-        </a>
+        </Link>
 
     )
 }

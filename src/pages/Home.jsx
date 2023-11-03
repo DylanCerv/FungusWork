@@ -61,7 +61,10 @@ export const Home = () => {
           <p className='text-xl'>{TEXTS.Section2.description1}</p>
         </section>
         <Services/>
-        <section className="section-bc">
+        <section
+          id='#proyectos'
+          className="section-bc"
+        >
           <div className="title">
             <h1 className="text-white font-bold">Proyectos</h1>
           </div>
