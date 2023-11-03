@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Header from './share/components/Header/Header';
 import { Services } from './components/Services/Services'
 import { ContactInfo } from './components/Contacts/ContactInfo'
-import { Footer } from './components/Footer'
+import { Footer } from './components/Footer/Footer'
 import { useState } from 'react';
 import { categories, data } from './data/data';
 import { ButtonList, CardProyectos } from './components';
@@ -51,11 +51,6 @@ function App() {
           <img
             className='absolute -z-10 top-0 left-0 w-full'
             src="/img/bg-top.svg"
-            alt="bg"
-          />
-          <img
-            className='absolute -z-10 bottom-0 left-0 w-full'
-            src="/img/bg-bottom.svg"
             alt="bg"
           />
           <article className='h-[40vh] sm:h-[50vh] py-20 px-4 text-center text-6xl md:text-start md:text-7xl md:px-20 md:h-[90vh] lg:text-8xl lg:h-[100vh] xl:h-screen'>
