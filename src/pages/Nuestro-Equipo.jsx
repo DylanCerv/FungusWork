@@ -68,7 +68,7 @@ export const NuestroEquipo = () => {
   ];
 
   return (
-    <div className="container mx-auto mt-10">
+    <div className="container mx-auto mt-40">
       <div className="flex flex-wrap justify-center">
         <div className="w-full md:w-1/2 text-center mb-8">
           <span className="alt-font text-extra-medium">The Development Team</span>
