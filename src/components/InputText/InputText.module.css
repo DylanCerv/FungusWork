@@ -29,3 +29,15 @@ textarea {
         font-size: 1.1em;
     }
 }
+
+@media (max-width: 300px) {
+    input[type='text'], textarea {
+        color: white;
+        outline: none;
+        background: transparent;
+        border: 2px solid #276a5d;
+        padding: 5px 15px;
+        border-radius: 9999px;
+        font-size: 15px;
+    }
+}
