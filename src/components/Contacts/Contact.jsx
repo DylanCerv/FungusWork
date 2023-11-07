@@ -5,8 +5,8 @@ export const Contact = ({topLabel, botLabel, icon}) => {
                 {icon}
             </div>
             <div className="flex flex-col text-black">
-                <span className="font-semibold">{topLabel}</span>
-                <span className="font-semibold">{botLabel}</span>
+                <span className="font-semibold text-lg sm:text-md">{topLabel}</span>
+                <span className="font-semibold text-lg sm:text-md">{botLabel}</span>
             </div>
         </div>
     )

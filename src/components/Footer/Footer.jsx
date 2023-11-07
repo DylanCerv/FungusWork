@@ -7,14 +7,14 @@ export const Footer = () => {
                 <span className="text-4xl font-bold">FUNGUSWORK</span>
                 <span className="text-green-500 text-4xl font-bold">AGENCY</span>
             </div>
-            <ul className="flex flex-row gap-5">
+            <ul className="flex flex-col sm:flex-row gap-5">
                 {ITEMS_NAV.map((ITEM) => {
                     return (
-                        <li className="cursor-pointer hover:text-green-500 text-1xl font-bold">{ITEM.label}</li>
+                        <li className="cursor-pointer hover:text-green-500 text-1xl font-bold text-center sm:text-left">{ITEM.label}</li>
                     )
                 })}
             </ul>
-            <ul className='flex flex-row gap-5'>
+            <ul className='flex flex-row  gap-5'>
                 {SOCIAL_NETWORKS.map((ITEM) => {
                     return (
                         <li className='rounded-full w-16 h-16 border-2 border-solid border-green-100 flex items-center justify-center text-4xl text-green-100 cursor-pointer hover:bg-green-500'>{ITEM.icon}</li>
