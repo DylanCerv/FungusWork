@@ -8,6 +8,8 @@ export const ButtonList = ({ categories, filterCategory, selectedCategory }) => 
 			  className={`btn-category ${selectedCategory === category ? 'active' : ''}`}
 			  onClick={() => filterCategory(category)}
 			  key={category}
+			  data-aos="zoom-in"
+			  data-aos-duration="1000"
 			>
 			  {category}
 			</button>

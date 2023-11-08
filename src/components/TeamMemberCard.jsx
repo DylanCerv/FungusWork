@@ -28,7 +28,7 @@ const TeamMemberCard = ({ name, role, imageSrc, socialLinks }) => {
                     IconComponent = FaTiktok;
                   }
                   return (
-                  <a key={index} href={link.url} target="_blank" rel="noreferrer" className="icon-very-small text-white">
+                  <a key={index} href={link.url} target="_blank" rel="noreferrer" className="icon-very-small text-white hover:text-green-500">
                     {/* {React.createElement(link.icon)} */}
                     {IconComponent && <IconComponent />}
                   </a>

@@ -1,10 +1,12 @@
 import '../styles/Proyectos.css'
 import '../styles/CardProyectos.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {data , categories} from '../data/data';
 import {  CardProyectos, ButtonList } from '../components'
 import { Services } from '../components/Services/Services';
 import { ContactInfo } from '../components/Contacts/ContactInfo';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TEXTS = {
   Section1: {
@@ -19,6 +21,10 @@ const TEXTS = {
 
 
 export const Home = () => {
+
+  useEffect(() => {
+    AOS.init(); // Inicializa AOS
+  }, []);
 
   const AllCategories = categories;
 
@@ -47,8 +53,8 @@ export const Home = () => {
             alt="bg"
           />
           <article className='text-white  py-20 px-4 text-center text-6xl md:text-start md:text-7xl md:px-20 h-[60vh] md:h-[70vh] lg:text-8xl lg:h-[100vh] xl:h-screen'>
-            <h1 className='font-semibold italic mt-[14vh] md:mt-[20vh]'>{TEXTS.Section1.titleP}</h1>
-            <h1 className=''>{TEXTS.Section1.titleS}</h1>
+            <h1 className='font-semibold italic mt-[14vh] md:mt-[20vh]' data-aos="fade-right" data-aos-duration="500">{TEXTS.Section1.titleP}</h1>
+            <h1 className='' data-aos="fade-right" data-aos-duration="1000">{TEXTS.Section1.titleS}</h1>
           </article>
         </section>
         <section className='text-white py-20 px-10 flex flex-col gap-10 items-center justify-center text-center md:px-20 lg:p-40'>
@@ -56,8 +62,8 @@ export const Home = () => {
             src="/logo/logo2.svg"
             alt="Logo"
           />
-          <h1 className='text-4xl'>{TEXTS.Section2.title}</h1>
-          <p className='text-xl'>{TEXTS.Section2.description1}</p>
+          <h1 className='text-4xl' data-aos="zoom-in" data-aos-duration="500">{TEXTS.Section2.title}</h1>
+          <p className='text-xl' data-aos="zoom-in-up" data-aos-duration="1000">{TEXTS.Section2.description1}</p>
         </section>
         <Services/>
         <section
@@ -65,7 +71,7 @@ export const Home = () => {
           className="section-bc"
         >
           <div className="title">
-            <h1 className="text-white font-bold">Proyectos</h1>
+            <h1 className="text-white font-bold slide-right" data-aos="zoom-in" data-aos-duration="500">Proyectos</h1>
           </div>
 
           <ButtonList categories={AllCategories} filterCategory={filterCategory} selectedCategory={selectedCategory} />
