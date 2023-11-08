@@ -65,6 +65,7 @@ module.exports = {
       104: "30rem",
       108: "34rem",
       120: "50rem",
+      130: "60rem",
       "services-container": "65rem",
       "service-width": "421px",
       "service-height": "294px",
