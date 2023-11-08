@@ -17,7 +17,7 @@ export const CardProyectos = ({ projects }) => {
                     <div className="w-100 left-0px text-white">
                         {project.description}
                     </div>
-                    <a className="text-small text-uppercase text-white hover:text-green-500" href={project.url} target="_blank" rel="noreferrer">Ver Sitio</a>
+                    <a className="text-small text-uppercase text-white hover:text-green-500 underline" href={project.url} target="_blank" rel="noreferrer">Ver Sitio</a>
                 </div>
             </div>
             </div>

@@ -1,15 +1,14 @@
 import React, { useState } from 'react'
-// import { Link } from 'react-scroll';
-import { Link } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 
 const TEXTSNav = {
     logo: {name: 'FungusWork', url: '/'},
     options: [
-        {name: 'Inicio', url: '/'},
-        {name: 'Nosotros', url: '/nuestro-equipo'},
-        {name: 'Servicios', url: '/#servicios'},
-        {name: 'Proyectos', url: '/#proyectos'},
+        {name: 'Inicio', tipo:'si', url: '/'},
+        {name: 'Nosotros', tipo:'si', url: '/nuestro-equipo'},
+        {name: 'Servicios', tipo:'no', url: 'servicios'},
+        {name: 'Proyectos', tipo:'no', url: 'proyectos'},
     ],
     contact: 'Contactanos',
     contactURL: '/#contacto'
@@ -19,11 +18,23 @@ const TEXTSNav = {
 export default function NavBar() {
 
     const [active, setActive] = useState(false);
-
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleActive = () => {
         setActive(!active);
     }
+
+    // Esta función maneja la navegación entre secciones.
+    const handleSectionClick = (section) => {
+        if (location.pathname === '/nuestro-equipo') {
+            if (section === 'Servicios' || section === 'Proyectos' || 'Contactanos') {
+                navigate(`/#${section.toLowerCase()}`);
+            } else {
+                navigate(section.toLowerCase());
+            }
+        }
+    };
 
 
   return (
@@ -48,12 +59,30 @@ export default function NavBar() {
                 <ul className='mr-auto lg:mr-0 mt-10 lg:my-auto flex flex-col lg:flex-row gap-6 text-2xl font-semibold'>
                     {TEXTSNav.options.map((data, index)=>(
                         <li key={index}>
-                            <a href={data.url} className='h-full text-white hover:text-green-100'>{data.name}</a>
+                            {data.tipo.startsWith('si') ? (
+                                <NavLink to={data.url} className='h-full text-white hover-text-green-100'>
+                                    {data.name}
+                                </NavLink>
+                            ) : (
+                                <a
+                                    href={`#${data.url}`} // Enlace de anclaje a secciones.
+                                    className='h-full text-white hover-text-green-100'
+                                    onClick={() => handleSectionClick(data.name)}
+                                >
+                                    {data.name}
+                                </a>
+                            )}
                         </li>
                     ))}
                 </ul>
                 <div className='mr-auto lg:mr-0 bg-primary px-6 py-3 rounded-full text-xl font-semibold'>
-                    <a href={TEXTSNav.contactURL} className='!text-white'>{TEXTSNav.contact}</a>
+                <a 
+                    href={`${TEXTSNav.contactURL}`} 
+                    className='!text-white'
+                    onClick={() => handleSectionClick(TEXTSNav.contact)}     
+                    >
+                        {TEXTSNav.contact}
+                </a>
                 </div>
             </div>
         </nav>
@@ -64,7 +93,7 @@ export default function NavBar() {
 
 function Logo () {
     return (
-        <Link to={TEXTSNav.logo.url}>
+        <NavLink to={TEXTSNav.logo.url}>
             <div className='flex flex-row gap-4 items-end text-white'>
                 <img
                     className='w-14'
@@ -73,7 +102,7 @@ function Logo () {
                 />
                 <p className='text-2xl font-bold tracking-wider'>{TEXTSNav.logo.name}</p>
             </div>
-        </Link>
+        </NavLink>
 
     )
 }
