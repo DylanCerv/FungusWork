@@ -7,10 +7,10 @@ export const Footer = () => {
                 <span className="text-4xl font-bold">FUNGUSWORK</span>
                 <span className="text-green-500 text-4xl font-bold">AGENCY</span>
             </div>
-            <ul className="flex flex-col sm:flex-row gap-5">
+            <ul className="flex flex-wrap sm:flex-row items-center justify-between gap-5 w-96 md:w-120">
                 {ITEMS_NAV.map((ITEM) => {
                     return (
-                        <li className="cursor-pointer hover:text-green-500 text-1xl font-bold text-center sm:text-left">{ITEM.label}</li>
+                        <li className="cursor-pointer w-40 md:w-auto hover:text-green-500 text-2xl font-bold text-left sm:text-left">{ITEM.label}</li>
                     )
                 })}
             </ul>

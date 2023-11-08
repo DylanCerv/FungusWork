@@ -16,7 +16,13 @@
     padding-right: 2vh;
 }
 
-@media (max-width: 1410px) {
+@media (max-width: 1580px) {
+    .contact_container {
+        gap: 4em;
+    }
+}
+
+@media (max-width: 1380px) {
     .contact_container {
         width: 100%;
         background: #000;
