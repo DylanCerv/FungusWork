@@ -60,13 +60,13 @@ export default function NavBar() {
                     {TEXTSNav.options.map((data, index)=>(
                         <li key={index}>
                             {data.tipo.startsWith('si') ? (
-                                <NavLink to={data.url} className='h-full text-white hover-text-green-100'>
+                                <NavLink to={data.url} className='h-full text-white hover-text-green-100 hover:text-white'>
                                     {data.name}
                                 </NavLink>
                             ) : (
                                 <a
                                     href={`#${data.url}`} // Enlace de anclaje a secciones.
-                                    className='h-full text-white hover-text-green-100'
+                                    className='h-full text-white hover-text-green-100 hover:text-white'
                                     onClick={() => handleSectionClick(data.name)}
                                 >
                                     {data.name}
