@@ -2,19 +2,29 @@ import { BiLogoFacebook, BiLogoInstagram, BiLogoTwitter, BiLogoLinkedin, BiLogoT
 
 export const ITEMS_NAV = [
     {
-        label: 'Inicio'
+        label: 'Inicio',
+        tipo:'si',
+        url: '/'
     },
     {
-        label: 'Nosotros'
+        label: 'Nosotros',
+        tipo:'si',
+        url: '/nuestro-equipo'
     },
     {
-        label: 'Servicios'
+        label: 'Servicios',
+        tipo:'no',
+        url: 'servicios'
     },
     {
-        label: 'Proyectos'
+        label: 'Proyectos',
+        tipo:'no',
+        url: 'proyectos'
     },
     {
-        label: 'Contactanos'
+        label: 'Contactanos',
+        tipo:'no',
+        url: 'contacto'
     }
 ]
 

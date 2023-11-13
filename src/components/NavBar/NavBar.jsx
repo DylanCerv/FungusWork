@@ -4,6 +4,8 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const TEXTSNav = {
     logo: {name: 'FungusWork', url: '/'},
+    // El tipo define si es una página o no
+    // Por ejemplo los que tienen no, son solo secciones del home.
     options: [
         {name: 'Inicio', tipo:'si', url: '/'},
         {name: 'Nosotros', tipo:'si', url: '/nuestro-equipo'},
@@ -28,7 +30,8 @@ export default function NavBar() {
     // Esta función maneja la navegación entre secciones.
     const handleSectionClick = (section) => {
         if (location.pathname === '/nuestro-equipo') {
-            if (section === 'Servicios' || section === 'Proyectos' || 'Contactanos') {
+            console.log("Primer section es:"+section)
+            if (section === 'Servicios' || section === 'Proyectos' || section === 'Contactanos') {
                 navigate(`/#${section.toLowerCase()}`);
             } else {
                 navigate(section.toLowerCase());
