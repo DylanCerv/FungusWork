@@ -27,6 +27,10 @@ export default function NavBar() {
         setActive(!active);
     }
 
+    const handleDesactive = () => {
+        setActive(false);
+    }
+
     // Esta función maneja la navegación entre secciones.
     const handleSectionClick = (section) => {
         if (location.pathname === '/nuestro-equipo') {
@@ -63,14 +67,18 @@ export default function NavBar() {
                     {TEXTSNav.options.map((data, index)=>(
                         <li key={index}>
                             {data.tipo.startsWith('si') ? (
-                                <NavLink to={data.url} className='h-full text-white hover-text-green-100 hover:text-white'>
+                                <NavLink to={data.url} onClick={handleDesactive} className='h-full text-white hover-text-green-100 hover:text-white'>
                                     {data.name}
                                 </NavLink>
                             ) : (
                                 <a
                                     href={`#${data.url}`} // Enlace de anclaje a secciones.
                                     className='h-full text-white hover-text-green-100 hover:text-white'
-                                    onClick={() => handleSectionClick(data.name)}
+                                    onClick={() => {
+                                            handleDesactive();
+                                            handleSectionClick(data.name)
+                                        }
+                                    }
                                 >
                                     {data.name}
                                 </a>
@@ -82,7 +90,11 @@ export default function NavBar() {
                 <a 
                     href={`${TEXTSNav.contactURL}`} 
                     className='!text-white'
-                    onClick={() => handleSectionClick(TEXTSNav.contact)}     
+                    onClick={() => {
+                            handleDesactive();
+                            handleSectionClick(TEXTSNav.contact)
+                        }
+                    }     
                     >
                         {TEXTSNav.contact}
                 </a>
