@@ -5,8 +5,8 @@
         to right,
         #004f40 0%,
         #004f40 30%,
-        #000 30%,
-        #000 100%
+        #08080c 30%,
+        #08080c 100%
     );
     display: flex;
     justify-content: center;
@@ -22,10 +22,10 @@
     }
 }
 
-@media (max-width: 1380px) {
+@media (max-width: 1180px) {
     .contact_container {
         width: 100%;
-        background: #000;
+        background: #08080c;
         height: auto;
         flex-direction: column;
         padding-top: 5em;

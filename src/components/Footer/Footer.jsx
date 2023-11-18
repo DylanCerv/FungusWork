@@ -51,9 +51,9 @@ export const Footer = () => {
                 })}
             </ul>
             <ul className='flex flex-row  gap-5'>
-                {SOCIAL_NETWORKS.map((ITEM) => {
+                {SOCIAL_NETWORKS.map((ITEM, I) => {
                     return (
-                        <li className='rounded-full w-16 h-16 border-2 border-solid border-green-100 flex items-center justify-center text-4xl text-green-100 cursor-pointer hover:bg-green-500'>{ITEM.icon}</li>
+                        <li key={I} className='rounded-full w-16 h-16 border-2 border-solid border-green-100 flex items-center justify-center text-4xl text-green-100 cursor-pointer hover:bg-green-500'>{ITEM.icon}</li>
                     )
                 })}
             </ul>

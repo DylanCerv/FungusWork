@@ -7,9 +7,9 @@ import { contacts } from './constants/data'
 export const ContactInfo = () => {
     return (
         <div id='contacto' className={style.contact_container}>
-            <div className='bg-transparent lg:bg-green-100 flex flex-col justify-center gap-4 sm:gap-12 lg:gap-4 md:w-contact-width h-contact-height rounded-2xl px-14 shadow-2xl border-4 border-green-500 lg:border-none'>
-                <span className='text-5xl sm:text-5xl font-bold sm:text-white lg:text-black'>Contact Info</span> 
-                <span className='text-xl sm:text-2xl lg:text-lg font-semibold sm:text-white lg:text-black'>
+            <div className='bg-transparent xl:bg-green-100 flex flex-col justify-center gap-4 sm:gap-12 lg:gap-4 md:w-contact-width h-contact-height rounded-2xl px-14 shadow-2xl border-4 border-green-500 xl:border-none'>
+                <span className='text-5xl sm:text-5xl font-bold sm:text-white xl:text-black'>Contact Info</span> 
+                <span className='text-xl sm:text-2xl lg:text-lg font-semibold sm:text-white xl:text-black'>
                 Objectively innovate your empowered
                 manufactured products whereas parallel
                 platforms for your ideas.
