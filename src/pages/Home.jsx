@@ -7,6 +7,7 @@ import { Services } from '../components/Services/Services';
 import { ContactInfo } from '../components/Contacts/ContactInfo';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 const TEXTS = {
   Section1: {
@@ -15,7 +16,7 @@ const TEXTS = {
   },
   Section2: {
     title: 'FungusWork Agency',
-    description1: 'The idea for Cedar came to our co-founder after a nightmarish personal journey through the healthcare system led to confusion, frustration and disappointment. One thing was clear: The system needed to change. Because when the patient experience is convenient and clear, it leads to significantly better outcomes for providers, payers and the people they serve. Cedar’s mission is to make healthcare more affordable and accessible through our consumer-friendly platform that’s powered by data science, smart product design and personalization.',
+    description1: 'En Funguswork Agency, nos dedicamos a destacar tu negocio en el mundo digital. Con los mejores especialistas en desarrollo web, diseño y marketing, creamos soluciones únicas para impulsar tu presencia en línea. En nuestra agencia, tu éxito es nuestra prioridad absoluta. Nos esforzamos incansablemente por ofrecer resultados excepcionales. Únete a nosotros en esta emocionante travesía hacia el triunfo digital, porque en Funguswork Agency, tu triunfo es nuestra mayor recompensa. En Funguswork Agency nos esforzamos por ti, su éxito es nuestro éxito.',
   },
 }
 
@@ -62,8 +63,11 @@ export const Home = () => {
             src="/logo/logo2.svg"
             alt="Logo"
           />
-          <h1 className='text-4xl' data-aos="zoom-in" data-aos-duration="500">{TEXTS.Section2.title}</h1>
+          <h1 className='text-4xl font-semibold' data-aos="zoom-in" data-aos-duration="500">{TEXTS.Section2.title}</h1>
           <p className='text-xl' data-aos="zoom-in-up" data-aos-duration="1000">{TEXTS.Section2.description1}</p>
+          <Link
+            className='bg-primary text-white font-semibold rounded-full px-8 py-4 hover:text-white'
+            to={'nuestro-equipo'}>Nuestro Equipo</Link>
         </section>
         <Services/>
         <section
