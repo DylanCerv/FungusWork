@@ -57,7 +57,10 @@ export const Footer = () => {
                     )
                 })}
             </ul>
-            <span className="text-gray-100 text-lg text-center p-1 md:p-0 md:w-service-width">Reference site about Lorem Ipsum, giving information on its origins, as well as a random Lipsum generator.</span>
+            <span className="text-gray-100 text-lg text-center px-2 py-0 md:px-0 md:py-0">
+                Agradecimientos especiales al equipo de <NavLink to="/nuestro-equipo" className="text-green-500 hover:underline hover:text-green-500">desarrollo-a </NavLink>creadores de este sitio web
+                <br/> © 2023. Todos los derechos Reservados 
+            </span>
         </footer>
     )
 }
