@@ -11,6 +11,7 @@ export const NuestroEquipo = () => {
       name: 'Jemmy Watson',
       role: 'Graphic Designer',
       imageSrc: photochica,
+      equipo: 'a',
       socialLinks: [
         { url: 'https://www.facebook.com/', icon: 'FaFacebookF' },
         { url: 'https://twitter.com/', icon: 'FaTwitter' },
@@ -23,6 +24,7 @@ export const NuestroEquipo = () => {
       name: 'Jemmy Watson',
       role: 'Graphic Designer',
       imageSrc: photochico,
+      equipo: 'a',
       socialLinks: [
         { url: 'https://www.facebook.com/', icon: 'FaFacebookF' },
         { url: 'https://twitter.com/', icon: 'FaTwitter' },
@@ -37,6 +39,7 @@ export const NuestroEquipo = () => {
       role: 'Graphic Designer',
       // imageSrc: 'https://via.placeholder.com/800x1000',
       imageSrc: defaultimg,
+      equipo: 'a',
       socialLinks: [
         { url: 'https://www.facebook.com/', icon: 'FaFacebookF' },
         { url: 'https://twitter.com/', icon: 'FaTwitter' },
@@ -48,6 +51,7 @@ export const NuestroEquipo = () => {
       name: 'Jemmy Watson',
       role: 'Graphic Designer',
       imageSrc: defaultimg,
+      equipo: 'a',
       socialLinks: [
         { url: 'https://www.facebook.com/', icon: 'FaFacebookF' },
         { url: 'https://twitter.com/', icon: 'FaTwitter' },
@@ -59,6 +63,7 @@ export const NuestroEquipo = () => {
       name: 'Jemmy Watson',
       role: 'Graphic Designer',
       imageSrc: defaultimg,
+      equipo: 'b',
       socialLinks: [
         { url: 'https://www.facebook.com/', icon: 'FaFacebookF' },
         { url: 'https://twitter.com/', icon: 'FaTwitter' },
@@ -66,6 +71,14 @@ export const NuestroEquipo = () => {
       ],
     }
   ];
+
+  const renderTeamMembers = (equipo) => {
+    return teamMembers
+      .filter((member) => member.equipo === equipo)
+      .map((member, index) => (
+        <TeamMemberCard key={index} {...member} />
+      ));
+  };
 
   return (
     <div className="container mx-auto mt-32">
@@ -75,10 +88,13 @@ export const NuestroEquipo = () => {
           <h5 className="alt-font text-extra-dark-gray text-lg font-weight-500 text-green-500">Creative people</h5>
         </div>
       </div>
+      <p className="text-lg text-center md:text-start text-white mb-6 font-weight-500">Desarrollo-A</p>
       <div className="flex flex-wrap">
-        {teamMembers.map((member, index) => (
-          <TeamMemberCard key={index} {...member} />
-        ))}
+        {renderTeamMembers('a')}
+      </div>
+      <p className="text-lg text-center md:text-start text-white mb-6 font-weight-500">Desarrollo-B</p>
+      <div className="flex flex-wrap">
+        {renderTeamMembers('b')}
       </div>
     </div>
   );
