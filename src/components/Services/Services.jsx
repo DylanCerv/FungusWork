@@ -1,4 +1,5 @@
 import { Service } from "./Service"
+import { services } from "./data"
 
 export const Services = () => {
     return (
@@ -6,34 +7,11 @@ export const Services = () => {
             <div className="flex flex-col items-center gap-8">
                 <span className="text-white text-3xl font-bold" data-aos="zoom-in" data-aos-duration="500">Servicios</span>
                 <div className="flex flex-wrap items-center justify-center gap-16 md:w-services-container sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl w-full overflow-hidden">
-                    <Service 
-                        tittle="Tecnologia & Desarrollo" 
-                        description="Analizamos y comprendemos los requerimientos de nuestros clientes para diseñar y desarrollar soluciones eficientes, con una interfaz de usuario bien diseñada, en combinación con una sólida  funcionalidad y una arquitectura robusta."
-                        href='test.com'
-                        animacion="fade-down-right"
-                        duracion="1000"
-                    />
-                    <Service 
-                        tittle="Tecnologia & Desarrollo" 
-                        description="Analizamos y comprendemos los requerimientos de nuestros clientes para diseñar y desarrollar soluciones eficientes, con una interfaz de usuario bien diseñada, en combinación con una sólida  funcionalidad y una arquitectura robusta."
-                        href='test.com'
-                        animacion="fade-down-left"
-                        duracion="1500"
-                    />
-                    <Service 
-                        tittle="Tecnologia & Desarrollo" 
-                        description="Analizamos y comprendemos los requerimientos de nuestros clientes para diseñar y desarrollar soluciones eficientes, con una interfaz de usuario bien diseñada, en combinación con una sólida  funcionalidad y una arquitectura robusta."
-                        href='test.com'
-                        animacion="fade-up-right"
-                        duracion="2000"
-                    />
-                    <Service 
-                        tittle="Tecnologia & Desarrollo" 
-                        description="Analizamos y comprendemos los requerimientos de nuestros clientes para diseñar y desarrollar soluciones eficientes, con una interfaz de usuario bien diseñada, en combinación con una sólida  funcionalidad y una arquitectura robusta."
-                        href='test.com'
-                        animacion="fade-up-left"
-                        duracion="2500"
-                    />
+                    {services.map((s,i) => {
+                        return (
+                            <Service tittle={s.tittle} description={s.description} animation={s.animation} duration={s.duration} href={s.href} icon={s.icon} key={i}></Service>
+                        )
+                    })}
                 </div>
             </div>
         </div>

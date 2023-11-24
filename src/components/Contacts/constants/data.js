@@ -14,8 +14,7 @@ export const contacts = [
         icon: <FiSmartphone/>
     },
     {
-        topLabel: 'support@rstheme.com',
-        botLabel: 'info@codesless.com',
+        topLabel: 'fungusworkagency@protonmail.com',
         icon: <AiOutlineMail/>
     },
     {
