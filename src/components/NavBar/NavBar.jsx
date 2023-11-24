@@ -8,12 +8,12 @@ const TEXTSNav = {
     // Por ejemplo los que tienen no, son solo secciones del home.
     options: [
         {name: 'Inicio', tipo:'si', url: '/'},
-        {name: 'Nosotros', tipo:'si', url: '/nuestro-equipo'},
+        {name: 'Nosotros', tipo:'no', url: 'nosotros'},
         {name: 'Servicios', tipo:'no', url: 'servicios'},
         {name: 'Proyectos', tipo:'no', url: 'proyectos'},
     ],
     contact: 'Contactanos',
-    contactURL: '/#contacto'
+    contactURL: '/#contactanos'
 }
 
 
@@ -34,8 +34,7 @@ export default function NavBar() {
     // Esta función maneja la navegación entre secciones.
     const handleSectionClick = (section) => {
         if (location.pathname === '/nuestro-equipo') {
-            console.log("Primer section es:"+section)
-            if (section === 'Servicios' || section === 'Proyectos' || section === 'Contactanos') {
+            if (section === 'Servicios' || section === 'Nosotros' || section === 'Proyectos' || section === 'Contactanos') {
                 navigate(`/#${section.toLowerCase()}`);
             } else {
                 navigate(section.toLowerCase());
