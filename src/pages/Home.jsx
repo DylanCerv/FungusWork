@@ -58,7 +58,7 @@ export const Home = () => {
             <h1 className='' data-aos="fade-right" data-aos-duration="1000">{TEXTS.Section1.titleS}</h1>
           </article>
         </section>
-        <section className='text-white py-20 px-10 flex flex-col gap-10 items-center justify-center text-center md:px-20 lg:p-40'>
+        <section id='nosotros' className='text-white py-20 px-10 flex flex-col gap-10 items-center justify-center text-center md:px-20 lg:p-40'>
           <img
             src="/logo/logo2.svg"
             alt="Logo"
