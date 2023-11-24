@@ -8,8 +8,8 @@ export const ITEMS_NAV = [
     },
     {
         label: 'Nosotros',
-        tipo:'si',
-        url: '/nuestro-equipo'
+        tipo:'no',
+        url: 'nosotros'
     },
     {
         label: 'Servicios',
@@ -24,7 +24,7 @@ export const ITEMS_NAV = [
     {
         label: 'Contactanos',
         tipo:'no',
-        url: 'contacto'
+        url: 'contactanos'
     }
 ]
 

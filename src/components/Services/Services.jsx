@@ -1,5 +1,5 @@
-import { DATA_SERVICES } from "../../data/dataServicios"
 import { Service } from "./Service"
+import { services } from "./data"
 
 export const Services = () => {
     return (
@@ -7,17 +7,11 @@ export const Services = () => {
             <div className="flex flex-col items-center gap-8">
                 <span className="text-white text-3xl font-bold" data-aos="zoom-in" data-aos-duration="500">Servicios</span>
                 <div className="flex flex-wrap items-center justify-center gap-16 md:w-services-container sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl 2xl:max-w-screen-2xl w-full overflow-hidden">
-                    {DATA_SERVICES.map((data, index)=>(
-                        <Service 
-                            key={index}
-                            src={data.image}
-                            tittle={data.title}
-                            description={data.description}
-                            href={data.href}
-                            animacion={data.animacion}
-                            duracion="1000"
-                        />
-                    ))}
+                    {services.map((s,i) => {
+                        return (
+                            <Service tittle={s.tittle} description={s.description} animation={s.animation} duration={s.duration} href={s.href} icon={s.icon} key={i}></Service>
+                        )
+                    })}
                 </div>
             </div>
         </div>
